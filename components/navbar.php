@@ -4,13 +4,16 @@
       <div>
         <h1 class="logo">Blog</h1>
       </div>
-      <div class="search-container">
-        <span class="material-icons-outlined search-icons"> search </span>
+      
+      <form action="" class="search-container">
+        <form action="">
+        <button class="material-icons-outlined search-icons"> search </button>
         <input class="search-field" type="text" placeholder="Search..." />
         <span class="material-icons-outlined search-icons">
           more_vert
         </span>
-      </div>
+      </form>
+
     </div>
   </div>
 </nav>

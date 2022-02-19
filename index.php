@@ -5,7 +5,7 @@
   <?php include "./components/navBar.php"?>
     <section class="hero-section">
       <div class="container">
-        <h1 class="hero-heading">Blog of the Day</h1>
+        <h1 class="heading hero-heading">Blog of the Day</h1>
         <div
           class="hero-container"
           style="background-image: url('img/news.jpg')"
@@ -23,7 +23,7 @@
 
     <section class="topics">
       <div class="container">
-        <h1 class="topic-heading">Nice Topics</h1>
+        <h1 class="heading topic-heading">Nice Topics</h1>
         <div class="topics-container">
           <div class="topic">
             <div
@@ -36,7 +36,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, pur us sit amet luctus venenatis, lectus
               </p>
-              <a href="" class="btn read-more">Read more</a>
+              <a href="blog.php" class="btn read-more">Read more</a>
             </div>
           </div>
           <div class="topic">
