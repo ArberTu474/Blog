@@ -176,6 +176,7 @@ nav {
 .topic {
   background-color: var(--clr-card-color);
   border-radius: 28px;
+  width: 25rem;
   display: inline-block;
   padding: 2rem;
 }
