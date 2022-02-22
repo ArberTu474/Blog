@@ -72,7 +72,6 @@
         </div>
       </div>
     </section>
-    <?php include "./components/fo.php" ?>
+    <?php include "./components/footer.php" ?>
   </body>
 </html>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis...
