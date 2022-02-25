@@ -2,17 +2,17 @@
   <div class="container">
     <div class="nav-container">
       <div>
-        <h1 class="logo">Blog</h1>
+        <a href="index.php" class="logo">Blog</a>
       </div>
       
-      <form action="/search.php" method="POST" class="search-container">
+      <form action="/Blog/search.php" method="POST" class="search-container">
         <button name="submit" class="material-icons-outlined search-icons"> search </button>
         <input name="search" class="search-field" type="text" placeholder="Search..." />
-        <span class="material-icons-outlined search-icons">
-          more_vert
-        </span>
       </form>
 
+      <a href="edit.php" class="material-icons search-icons edit-btn">
+        edit
+      </a>
     </div>
   </div>
 </nav>

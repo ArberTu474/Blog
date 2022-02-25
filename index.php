@@ -6,17 +6,29 @@
     <section class="hero-section">
       <div class="container">
         <h1 class="heading hero-heading">Blog of the Day</h1>
-        <div
-          class="hero-container"
-          style="background-image: url('img/news.jpg')"
-        >
-          <div class="hero-img-container">
-            <h1 class="hero-title">NEWS!</h1>
-            <p class="hero-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis...
+        <?php 
+          $sql = "SELECT * FROM article Where news_of_the_day='1'";
+          $result = mysqli_query($conn, $sql);
+          $queryResults = mysqli_num_rows($result);
+      
+          if ($queryResults > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo "<div
+              class='hero-container'
+              style='background-image: url({$row["img"]})'
+            >
+
+            <div class='hero-img-container'>
+            <h1 class='hero-title'>{$row["title"]}</h1>
+            <p class='hero-description'>
+            ".substr($row['description'], 0, 100)."...
             </p>
           </div>
+            ";
+            }
+          }
+        ?>
+        
         </div>
       </div>
     </section>
@@ -43,7 +55,7 @@
                   <p class='topic-description'>
                     ".substr($row['description'], 0, 100)."...
                   </p>
-                  <a href='blog.php' class='btn read-more'>Read more</a>
+                  <a href='blog.php?id={$row["id"]}' class='btn read-more'>Read more</a>
                 </div>
               </div>";
             }
