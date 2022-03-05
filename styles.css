@@ -6,6 +6,9 @@
   --clr-text-color: #021c35;
   --clr-text-color-gray: #636768;
 
+  --clr-input-border-color: #dddddd;
+  --clr-input-bg-color: #f6f9ff;
+
   --clr-primary-color: #173450;
 
   --clr-primary-color-light-100: #c3e7ff;
@@ -16,6 +19,14 @@
 
   --clr-card-color: #f1f4fb;
   --clr-card-color-hover: #e6edff;
+
+  --clr-error: #fd5f5f;
+  --clr-error-bg: #ffc2c2;
+  --clr-error-bg-border: #ff9999;
+
+  --clr-success: #4eaf16;
+  --clr-success-bg: #c9ffc7;
+  --clr-success-bg-border: #96e48e;
 }
 
 * {
@@ -385,6 +396,89 @@ footer {
   margin-bottom: 5rem;
 }
 
+/*--------------- EDIT PAGE ---------------*/
+
+.edit-form {
+  margin: 2rem 0;
+}
+
+.input {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: solid 2px var(--clr-input-border-color);
+  background-color: var(--clr-input-bg-color);
+}
+
+.input + .input {
+  margin-top: 1.5rem;
+}
+
+.input:focus {
+  border: solid 2px var(--clr-primary-color);
+}
+
+.text-area {
+  resize: vertical;
+}
+
+.label {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 1rem 0 0.3rem 1rem;
+}
+
+.create-blog-btn {
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.message-field {
+  position: fixed;
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  margin: 2rem;
+  bottom: 0;
+  right: 0;
+  padding: 1.4rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 7px rgb(0, 0, 0, 0.25);
+}
+
+.message-text {
+  font-size: 1.8rem;
+}
+
+.error-field {
+  background-color: var(--clr-error-bg);
+  border: solid 1px var(--clr-error-bg-border);
+}
+
+.error-text {
+  color: var(--clr-error);
+}
+
+.success-field {
+  background-color: var(--clr-success-bg);
+  border: solid 1px var(--clr-success-bg-border);
+}
+
+.success-text {
+  color: var(--clr-success);
+}
+
+.create-title {
+  font-size: 2.6rem;
+}
+
+.close {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .logo {
     font-size: 3.2rem;
@@ -423,5 +517,9 @@ footer {
   .search-content {
     margin-left: 0;
     margin-top: 2rem;
+  }
+
+  .create-blog-btn {
+    width: 100%;
   }
 }

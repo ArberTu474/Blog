@@ -7,11 +7,11 @@
       
       <form action="/Blog/search.php" method="POST" class="search-container">
         <button name="submit" class="material-icons-outlined search-icons"> search </button>
-        <input name="search" class="search-field" type="text" placeholder="Search..." />
+        <input name="search" class="search-field" type="text" placeholder="Search..." autocomplete="off"/>
       </form>
 
       <a href="edit.php" class="material-icons search-icons edit-btn">
-        edit
+        add
       </a>
     </div>
   </div>

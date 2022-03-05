@@ -10,4 +10,5 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Blog</title>
+    <script defer src="/Blog/main.js"></script>
   </head>

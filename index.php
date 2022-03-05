@@ -2,9 +2,30 @@
 <html lang="en">
   <?php include "./components/header.php"?>
   <body>
-  <?php include "./components/navBar.php"?>
+  <?php include "./components/navbar.php"?>
     <section class="hero-section">
       <div class="container">
+      
+        <?php
+          if (!empty ($_GET['created'])) {
+            if ($_GET['created'] == "failed") {
+              echo '<div class="message-field error-field">
+              <span class="error-text close material-icons-outlined">
+                close
+                </span>
+              <p class="message-text error-text">Failed to create the article</p>
+            </div>';
+            } elseif ($_GET['created'] == "success") {
+              echo '<div class="message-field success-field">
+              <span class="success-text close material-icons-outlined">
+                close
+                </span>
+              <p class="message-text success-text">Article created successfully</p>
+            </div>';
+            }
+          }  
+        ?>
+
         <h1 class="heading hero-heading">Blog of the Day</h1>
         <?php 
           $sql = "SELECT * FROM article Where news_of_the_day='1'";
@@ -80,6 +101,8 @@
           
         </div>
       </div>
+
+      <div class="disclaimer">hellovnadbavnl</div>
     </section>
     <?php include "./components/footer.php" ?>
   </body>

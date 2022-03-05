@@ -41,9 +41,7 @@
             </p>
           </div>
         </div>
-      </section>
-        
-        ";
+      </section>";
       }
     }
   ?>
