@@ -6,7 +6,8 @@ elemnet.remove();
 // closes the message pop up
 
 const close = document.querySelector(".close");
-
-close.addEventListener("click", () => {
-  close.parentNode.remove();
-});
+if (close) {
+  close.addEventListener("click", () => {
+    close.parentNode.remove();
+  });
+}
